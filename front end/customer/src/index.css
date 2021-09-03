@@ -1,0 +1,335 @@
+body {
+    background-color: #1d9ded;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d9ded;
+    min-height: 100vh;
+    display: flex;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-light {
+    background-color: lightskyblue;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+    background-color: #1d9ded;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://wallpapercave.com/wp/wp2913471.jpg);
+}
+
+.auth-inner {
+    width: 500px;
+    background: #ffffff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.designtrends.com/wp-content/uploads/2015/11/30145852/Plain-light-Aqua-Background.jpg);
+}
+
+.auth-wrapper .form-control:focus {
+    border-color: #167bff;
+    box-shadow: none;
+}
+
+.auth-wrapper h3 {
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.custom-control-label {
+    font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+}
+
+.forgot-password a {
+    color: #167bff;
+}
+
+.btne {
+    margin-left: 80vh;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #6ac3f2;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #1d9ded 2px;
+    text-decoration: none;
+}
+
+.btne:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+.title {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 22, 24, 0.582);
+    transition: 0.4s;
+    width: 100%;
+    height: 80vh;
+}
+
+.title h1 {
+    position: absolute;
+    top: 35vh;
+    left: 8vh;
+    font-size: 7.5rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.title:hover {
+    background-color: rgba(37, 37, 48, 0);
+    transition: 0.4s;
+}
+
+.title:hover h1 {
+    color: #1d9ded;
+}
+
+.desc {
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.863);
+    position: absolute;
+    top: 0vh;
+    right: -24vh;
+    transform: rotateZ(45deg);
+}
+
+.inf {
+    float: right;
+    position: relative;
+    z-index: 2;
+    bottom: 60vh;
+    width: 35%;
+    font-size: 2rem;
+    color: white;
+    padding: 50px;
+    font-weight: 600;
+}
+
+.container1 {
+    width: 100%;
+    height: 80vh;
+    background-image: url("component/images/car.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.imgw {
+    width: 120px;
+    margin: 10px auto 8px auto;
+}
+
+.tmp {
+    height: 200px;
+    width: 200px;
+    background-color: rosybrown;
+}
+
+.booking {
+    margin-top: 150px;
+}
+
+.logowash {
+    background-image: image("react-login-signup-ui/src/images/pngaaa.com-2964951.png");
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.cl {
+    display: block;
+    padding: .5rem 1rem;
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+}
+
+.cl:hover {
+    transition: 1s;
+    color: black;
+    background-color: white;
+}
+
+.card {
+    width: 70%;
+    margin: 20px 25px;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about {
+    cursor: pointer;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.about h1 {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    opacity: .8;
+}
+
+.about span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    background-color: #4C0822;
+    border: 2px solid #4C0822;
+    transition: all 2s ease;
+}
+
+.about .lead {
+    color: #CC0039;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rounded-lg {
+    border-radius: 1rem !important;
+}
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+.custom-separator {
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+}
+
+.text-uppercase {
+    letter-spacing: 0.2em;
+}
+
+body {
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    color: #514B64;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+ ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #1B1B2F;
+}
