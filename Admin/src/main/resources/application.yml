@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+#spring:
+ # data:
+  #  mongodb:
+   #   uri: 
+  #application:
+   # name: ADMIN-SERVICE
+
+#server:
+#  port: 9091
+#logging:
+ # file:
+  #  path: C:/Users/Shriganesh/Desktop/logs/admin.log
