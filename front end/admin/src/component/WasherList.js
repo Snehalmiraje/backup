@@ -43,7 +43,7 @@ export default class WasherList extends Component {
             <h2 className="text-center">Car Washers List</h2>
             <div className="row">
 
-             <Link className="btn btn-primary btn-block" to={"/addWasher"}>ADD</Link>
+          
             </div>
                 <div className="row">
                 <table className="table table-striped table bordered">
@@ -72,6 +72,7 @@ export default class WasherList extends Component {
                     </tbody>
                 </table>
             </div>  
+            <Link className="btn btn-primary btn-block" to={"/addWasher"}>ADD</Link>
             </div>
         );
     }
