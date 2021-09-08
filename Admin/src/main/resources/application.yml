@@ -17,6 +17,3 @@
 
 #server:
 #  port: 9091
-#logging:
- # file:
-  #  path: C:/Users/Shriganesh/Desktop/logs/admin.log
