@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Login from "./Login";
+import logo from "./images/logo.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {Redirect} from "react-router-dom"
 export default class SignUp extends Component {
     constructor() {
         super()
@@ -41,6 +43,7 @@ export default class SignUp extends Component {
            password: null,
            isSignUp: true
        })
+       
     }
        
       
@@ -51,22 +54,23 @@ export default class SignUp extends Component {
 
     render() {
         return (
-            <><nav className="navbar navbar-expand-lg navbar-light fixed-top">
-            <div className="container">
-                <Link className="navbar-brand" to={"/sign-in"}></Link>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul className="navbar-nav ml-auto">
+            <><nav className="navbar navbar-expand-lg fixed-top">
+                    <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link" to={"/sign-in"}>Login</Link>
+                        <img src={logo} class="navbar-brand" alt=""></img>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hv">
+                            <Link className="nav-link " to={"/sign-in"}>Login</Link>
+                        </li>
+                        <li className="nav-item hv">
                             <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
                         </li>
-                       
+                        <li className="nav-item">
+                            <img src="https://autoparkingpatras.gr/wp-content/uploads/2017/07/car_wash1.gif" className="anime-img"/>
+                            </li>
                     </ul>
-                </div>
-            </div>
-        </nav><div className="auth-wrapper">
+        </nav>
+        <div className="auth-wrapper">
                 <div className="auth-inner">
                 <div>
                 {
@@ -94,11 +98,15 @@ export default class SignUp extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" onChange={(event)=>{this.setState({password:event.target.value})}}/>
                 </div>
 
-                <button type="submit"  className="btn btn-primary btn-block" onClick={(e)=>this.register(e)}>Sign Up</button>
+                <button type="submit"  className="btn btn-primary btn-block buttonspace" onClick={(e)=>this.register(e)}>Sign Up</button>
               
               </form>
               :
-              <Login/>
+              <Switch>
+                  <Route>
+              <Redirect to="/sign-in"></Redirect>
+              </Route>
+              </Switch>
 
                 }
             </div>

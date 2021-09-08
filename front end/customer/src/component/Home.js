@@ -24,7 +24,7 @@ export default class Home extends Component {
                         <div class="navbar-nav">
                           <Link className="cl" to={"/title"}>Home</Link>
                           <Link className="cl" to={"/Services"}>Services</Link>
-                          <Link className="cl" to={"/Contact"}>Contact Us</Link>
+                          <Link className="cl" to={"/Contact"}>About Us</Link>
                           <Link className="btne" to={"/Booking"}>Book now</Link>
 
                        </div>
@@ -40,6 +40,9 @@ export default class Home extends Component {
                         </Switch>
               
             </div> 
+            <div className="footer">
+      <p>&copy; Copyright 2020 <i>@snehalmiraje</i></p>
+    </div>
              </Router>
 
             

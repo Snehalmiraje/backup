@@ -7,7 +7,9 @@ import Login from './component/Login';
 import SignUp from './component/SignUp';
 import Home from './component/Home';
 function App() {
-  return (<Router>
+  return (
+    <>
+  <Router>
     <div className="App">
     <Switch>
             <Route exact path='/' component={Login} />
@@ -15,7 +17,11 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={Home} />
         </Switch>
-    </div></Router>
+    </div>
+    
+    </Router>
+    
+  </>
   );
 }
 

@@ -18,7 +18,6 @@ code {
 
 body {
     background-color: #1d9ded;
-    min-height: 100vh;
     display: flex;
     font-weight: 400;
     font-family: 'Fira Sans', sans-serif;
@@ -60,9 +59,6 @@ html,
     flex-direction: column;
     text-align: left;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(https://wallpapercave.com/wp/wp2913471.jpg);
 }
 
 .auth-inner {
@@ -183,7 +179,7 @@ html,
     bottom: 60vh;
     width: 35%;
     font-size: 2rem;
-    color: white;
+    color: #1d9ded;
     padding: 50px;
     font-weight: 600;
 }
@@ -247,15 +243,26 @@ html,
     background-color: white;
 }
 
-.card {
-    width: 70%;
-    margin: 20px 25px;
-    padding: 10px;
+.display-6,
+.display-5,
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
+    margin: 35px 0;
+    padding: 30px 0;
+    color: #2980b9;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+.card {
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    border: none;
+}
+
+.card-body {
+    margin: 10px 0;
 }
 
 .about {
@@ -334,4 +341,231 @@ body {
  ::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #1B1B2F;
+}
+
+.nav-item {
+    height: 70px;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 80px;
+}
+
+.hv {
+    transition: 0.5s;
+}
+
+.hv:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+.nav-link {
+    color: white;
+}
+
+.hv:hover .nav-link {
+    color: #292b2c;
+}
+
+.navbar {
+    background-color: rgba(37, 34, 34, 0.5);
+    color: blanchedalmond;
+}
+
+.navbar-nav {
+    margin-left: 80px;
+}
+
+.anime-img {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    padding: 0;
+    margin: 0;
+    height: 85px;
+}
+
+.buttonspace {
+    margin: 20px auto 10px auto;
+}
+
+.welcome {
+    font-size: 1.5rem;
+}
+
+.name {
+    color: white;
+    font-family: cursive;
+}
+
+.footer {
+    background-color: #292b2c;
+    color: blanchedalmond;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 80px;
+}
+
+
+/*.social-msg {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 220px;
+    background-color: lightblue;
+}
+
+.social-msg p {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-size: 1.2rem;
+    color: orangered;
+}
+
+.social-msg h1 {
+    position: relative;
+    left: 200px;
+    top: 75px;
+    color: black;
+}
+*/
+
+.our_solution_category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.our_solution_category .solution_cards_box {
+    display: flex;
+    justify-content: center;
+}
+
+.solution_cards_box .solution_card {
+    flex: 0 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    margin: 50px 10px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 265px;
+    transition: 0.7s;
+}
+
+.solution_cards_box .solution_card:hover {
+    transform: scale(1.1);
+    z-index: 9;
+}
+
+.solution_cards_box .solution_card:hover .solu_title h3,
+.solution_cards_box .solution_card:hover .solu_description p {
+    color: #fff;
+}
+
+.solution_card .solu_title h3 {
+    color: #1d9ded;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.solution_card .solu_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.our_solution_content h1 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.solution_cards_box .solution_card .so_top_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.so_top_icon {
+    background-color: #2980b9;
+}
+
+.solution_cards_box .solution_card .so_top_icon img {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.our_solution_category {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wash-type {
+    background-color: #514B64;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+}
+
+.a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card-img-top {
+    width: 500px;
+    height: 400px;
+}
+
+.about-us {
+    margin: 0 auto 0 auto;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.link-list {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link:hover,
+.social-link:focus {
+    transition: 0.3s;
+    margin-top: 12px;
+    background: #1c6494;
+    text-decoration: none;
+}
+
+.Us h1,
+h2 {
+    color: #1d9ded;
 }
